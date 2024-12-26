@@ -56,7 +56,7 @@ signinButton.addEventListener("click", function(event) {
     .then((userCredential) => {
       // Signed in successfully
       const user = userCredential.user;
-      alert("Welcome back, " + user.);
+      alert("Welcome back, " + user.email);
     })
     .catch((error) => {
       const errorCode = error.code;
